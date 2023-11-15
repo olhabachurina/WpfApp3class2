@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp3class2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3class2"
+        mc:Ignorable="d"
+        Title="Выбор цвета текста" Height="550" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,10,0,0">Выбор цвета текста</TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="0,50,0,0">
+            <RadioButton Content="Красный" GroupName="ColorGroup" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Синий" GroupName="ColorGroup" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Зеленый" GroupName="ColorGroup" Checked="RadioButton_Checked"/>
+        </StackPanel>
+        <Button Content="Применить" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="ApplyButton_Click"/>
+        <TextBlock Name="SelectedColorText" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
